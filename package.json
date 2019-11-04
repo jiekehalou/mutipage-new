@@ -20,7 +20,7 @@
     "html2canvas": "^1.0.0-alpha.12",
     "iview": "^3.2.2",
     "js-cookie": "^2.2.0",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.13",
     "moment": "^2.20.1",
     "normalize.css": "7.0.0",
     "pagination": "^0.4.6",
