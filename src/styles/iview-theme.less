@@ -1,0 +1,69 @@
+@import '~iview/src/styles/index.less';
+
+@menu-dark-title: #001529;
+@menu-dark-active-bg: #000c17;
+@layout-sider-background: #001529;
+
+@primary-color: #2B36A0;
+@processing-color: rgb(169, 177, 248);
+@table-thead-bg: #f9f9f9;
+@table-td-hover-bg: #C6E7FF;
+@table-td-highlight-bg: #C6E7FF;
+@table-td-stripe-bg: #EFEFEF;
+@focus-color:orange;
+
+
+.ivu-tabs-nav .ivu-tabs-tab:hover {
+    color: @primary-color;
+}
+
+.ivu-tabs-nav .ivu-tabs-tab-active {
+    color: #555555;
+}
+
+.ivu-modal {
+    .ivu-modal-header {
+        background: #010b17;
+        padding: 11px;
+        >.ivu-modal-header-inner {
+            color: white;
+        }
+    }
+
+    .ivu-modal-body {
+        position: relative;
+    }
+
+    .ivu-modal-footer {
+        border-top: 0;
+        /* text-align: center; */
+    }
+}
+
+.primary-text {
+    color: @primary-color;
+}
+
+.ivu-form .ivu-form-item-label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ivu-modal {
+    .ivu-modal-footer {
+        text-align: center;
+    }
+}
+
+//弹层样式覆盖
+.ivu-modal-mask {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(56, 62, 121, 0.48);
+    height: 100%;
+    z-index: 1000;
+}

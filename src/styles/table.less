@@ -1,0 +1,199 @@
+.table-list {
+    width: 100%;
+    font-family: "微软雅黑";
+    font-size: 1rem;
+    empty-cells: show;
+    table-layout: fixed;
+    word-wrap: break-word;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: none;
+}
+
+.table-list thead {
+    height: 32px;
+    line-height: 32px;
+    background-color: #f9f9f9;
+}
+
+.table-list thead th {
+    font-size: 0.8rem;
+    color: black;
+    text-align: center;
+    height: 30px;
+    line-height: 30px; // background-color: #F6F6F6;
+    text-align: center;
+    font-weight: 50;
+}
+
+.table-list thead th.is-leaf {
+    border: 1px solid #ebeef5;
+}
+
+.table-list thead th div {
+    color: black; // background-color: rgba(0, 0, 0, 0)
+}
+
+;
+
+.table-list tbody {
+    overflow-y: scroll;
+}
+
+.table-list tbody tr {
+    border: none;
+    height: 50px;
+    cursor: pointer;
+}
+
+.empty-block {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #ebeef5 !important;
+}
+
+.table-list tbody tr:hover {
+    background-color: #F6F6F6;
+}
+
+.table-list tbody tr {
+    border-left: 1px solid #ebeef5 !important;
+    border-right: 1px solid #ebeef5 !important;
+}
+
+.table-list tbody tr td {
+    padding: 0 10px !important;
+    color: #606266; // border-left: 1px solid #ebeef5 !important;
+    // border-right: 1px solid #ebeef5 !important;
+    border-bottom: 1px solid #ebeef5 !important;
+    text-align: center;
+    height: 50px;
+    word-wrap: break-word;
+    padding: 0;
+    font-size: 14px;
+}
+
+.table-list tbody tr td .el-button+.el-button {
+    margin-left: 0px;
+}
+
+.el-table__body,
+.el-table__header {
+    width: 100% !important;
+    text-align: left;
+}
+
+.el-table__body-wrapper {
+    overflow-y: auto;
+}
+
+/**
+ * 列表界面头部样式
+ * @author super
+ *
+ */
+
+.search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: .3125rem
+        /* 5/16 */
+    ;
+    padding-bottom: 0;
+
+    *zoom: 1;
+    background-color: white;
+
+    &:after {
+        display: block;
+        content: "clear";
+        height: 0;
+        clear: both;
+        overflow: hidden;
+        visibility: hidden;
+    }
+
+    .left {
+        float: left;
+        margin-left: 5px; // height: 40px;
+
+        .el-range-editor--small.el-input__inner {
+            margin-top: 5px;
+            padding-left: 5px;
+            padding-right: 0; // width: 215px;
+        }
+
+        .el-date-editor .el-range-separator {
+            padding: 0;
+            line-height: 24px;
+            margin-left: 3px;
+            margin-right: 5px;
+        }
+
+        .el-range-editor--small .el-range-input {
+            // width: 76px;
+        }
+    }
+
+    .right {
+        float: right;
+        margin-right: 5px;
+
+        .left {
+            margin: 0 10px;
+        }
+    }
+
+    .el-input {
+        float: left;
+        margin-top: 5px;
+    }
+
+    .el-button {
+        float: left;
+        margin-top: 5px;
+    }
+}
+
+// 新增操作栏区块
+.operate-bar {
+    height: 30px;
+    display: flex;
+    align-items: center;
+
+    .operate-btn {
+        padding: 0;
+    }
+}
+
+
+// 模拟表格
+.mcTable {
+    border: 1px solid #dcdee2;
+    overflow: hidden;
+
+    .header {
+        width: 100%;
+        border-bottom: 1px solid #dcdee2;
+    }
+
+    .td:not(:last-child) {
+        border-right: 1px solid #dcdee2;
+    }
+
+    .td {
+        padding: 8px 0;
+        flex: 1;
+        text-align: center;
+    }
+
+    .row:not(:last-child) {
+        border-bottom: 1px solid #dcdee2;
+    }
+}
+
+.pagination {
+    padding: 7px 0;
+}
