@@ -3,12 +3,12 @@
 // import '@/styles/index.less'
 // import '@/assets/iconfont/iconfont.css'
 import Vue from 'vue'
-import App from './App'
+import App from '@/view/common/App'
 import router from './router'
 
 import iView from 'iview'
 import config from '@/config'
-import local from '@/assets/js/libs/local'
+import local from '@/assets/js/smartLine/local'
 Vue.prototype.$config = config
 Vue.use(require('vue-wechat-title'))//设置title;
 Vue.use(iView)

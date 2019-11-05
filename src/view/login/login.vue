@@ -1,39 +1,6 @@
 <template>
   <div class="login">
-    <div class="page-login--layer">
-      <ul class="circles">
-        <li v-for="n in 10" :key="n"></li>
-      </ul>
-    </div>
-    <div class="page-login--time">{{time}}</div>
-    <div class="logo"/>
-    <!-- <AppLogo class="logo" /> -->
-    <div class="login-con">
-      <Card icon="log-in" class="login-card" title="欢迎登录" :bordered="false" style="user-select: none;">
-        <div class="form-con">
-          <Form ref="loginForm" :model="form" :rules="rules" @keydown.enter.native="handleSubmit">
-            <FormItem prop="userName">
-              <Input v-model="form.userName" placeholder="请输入用户名">
-                <span slot="prepend">
-                  <Icon :size="16" type="ios-person"></Icon>
-                </span>
-              </Input>
-            </FormItem>
-            <FormItem prop="password">
-              <Input type="password" v-model="form.password" placeholder="请输入密码">
-                <span slot="prepend">
-                  <Icon :size="14" type="md-lock"></Icon>
-                </span>
-              </Input>
-            </FormItem>
-            <FormItem>
-              <Button @click.native="handleSubmit" :loading="loading" type="primary" long>登录</Button>
-            </FormItem>
-          </Form>
-          <p class="login-tip">{{$config.copyrightLogin}}</p>
-        </div>
-      </Card>
-    </div>
+        登陆
   </div>
 </template>
 <script>

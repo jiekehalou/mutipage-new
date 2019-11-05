@@ -24,7 +24,7 @@ module.exports = {
       template: 'public/template.html',
       title: '系统管理',
       filename: 'systemManagement.html',
-      chunks: ['chunk-vendors', 'chunk-common', 'releaseLine']
+      chunks: ['chunk-vendors', 'chunk-common', 'systemManagement']
     },
     //3.数字化放行
     releaseLine: {
@@ -49,7 +49,7 @@ module.exports = {
       template: 'public/template.html',
       title: '运行限制',
       filename: 'operatingLimits.html',
-      chunks: ['chunk-vendors', 'chunk-common', 'releaseLine']
+      chunks: ['chunk-vendors', 'chunk-common', 'operatingLimits']
     },
     //6.运行规则库
     operationRules: {
@@ -57,7 +57,7 @@ module.exports = {
       template: 'public/template.html',
       title: '运行规则库',
       filename: 'operationRules.html',
-      chunks: ['chunk-vendors', 'chunk-common', 'releaseLine']
+      chunks: ['chunk-vendors', 'chunk-common', 'operationRules']
     },
   },
   publicPath: './',
@@ -139,7 +139,7 @@ module.exports = {
     disableHostCheck: true, // 加上这段
     before: app => {
     },
-    // externals:{
+    // externals:{ //此处可使用cdn引入
     //   "ol":"ol"
     // }
   },

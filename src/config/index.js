@@ -7,11 +7,10 @@ export default {
   CONFIG_APP_DICTIONARY: { //路由路径字典表
     'login': '@/router/routers', 
     'releaseLine': '@/pages/login/router', 
-    'smartLine': '@/pages/smartLine/router' 
+    'smartLine': '@/pages/smartLine/router'
   },
   prefix: '/v1/api/',
   prefixLine: smartLineUrl,
-
   /**
    * @description 配置显示在浏览器标签的title
    */

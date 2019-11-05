@@ -10,6 +10,7 @@ export const tool = {
       requestMethod.call(element)
     } else if (typeof window.ActiveXObject !== 'undefined') { // for Internet
       // Explorer
+      let ActiveXObject=window.ActiveXObject
       var wscript = new ActiveXObject('WScript.Shell')
       if (wscript !== null) {
         wscript.SendKeys('{F11}')

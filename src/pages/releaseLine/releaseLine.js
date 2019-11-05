@@ -6,7 +6,7 @@ import '@/styles/index.less'
 import 'vue-virtual-scroller/dist/vue-virtual-scroller.css'
 
 import Vue from 'vue'
-import App from './App'
+import App from '@/view/common/App'
 import router from './router/index'
 import iView from 'iview'
 import i18n from '@/locale'

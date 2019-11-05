@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie'
 // cookie保存的天数
 import config from '@/config'
-import { forEach, hasOneOf, objEqual } from '@/assets/js/libs/tools'
+import { forEach, hasOneOf, objEqual } from '@/assets/js/utils/tools'
 const { title, cookieExpires, useI18n } = config
 
 export const TOKEN_KEY = 'token'
@@ -9,7 +9,6 @@ export const TOKEN_KEY = 'token'
 export const setCookieSave = (key, value) => {
   Cookies.set(key, value, { expires: cookieExpires || 1 })
 }
-
 export const getCookieToJson = (key) => {
   try {
     const value = Cookies.getJSON(key)
@@ -19,7 +18,6 @@ export const getCookieToJson = (key) => {
     console.log(error, 'cookie 读取异常')
   }
 }
-
 export const getCookieToString = (key) => {
   try {
     const value = Cookies.get(key)

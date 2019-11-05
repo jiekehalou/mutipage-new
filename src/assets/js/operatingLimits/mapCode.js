@@ -7,7 +7,6 @@ export function matchPropClass (code) {
     'NUMBER': '数值'
   }[code]
 }
-
 export function matchPropType (code) {
   return {
     0: '情报区',

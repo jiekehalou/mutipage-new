@@ -8,7 +8,7 @@ import '@/assets/iconfont/iconfont.css'
 import '@/styles/index.less'
 import config from '@/config'
 import Vue from 'vue'
-import App from './App'
+import App from '@/view/common/App'
 import router from './router/index'
 // config.VUE_APP_ROUTERTYPE ='login'
 // console.log('首页config.VUE_APP_ROUTERTYPE', config.VUE_APP_ROUTERTYPE)
