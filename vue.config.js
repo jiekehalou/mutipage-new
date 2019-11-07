@@ -14,7 +14,7 @@ module.exports = {
     login: {
       entry: './src/pages/login/login.js',
       template: 'public/template.html',
-      filename: 'index.html',
+      filename: 'login.html',
       title: '登陆',
       chunks: ['chunk-vendors', 'chunk-common', 'login']
     },
@@ -136,7 +136,7 @@ module.exports = {
         }
       },
     }, // 设置代理
-    disableHostCheck: true, // 加上这段
+    disableHostCheck: true, 
     before: app => {
     },
     // externals:{ //此处可使用cdn引入
