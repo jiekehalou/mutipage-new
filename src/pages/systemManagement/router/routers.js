@@ -1,31 +1,28 @@
 const _import = file => () => import('@/view/' + file + '.vue');
-const SmartLineMain= _import('layout/smartLineMain') //飞机监控main主页
+const systemManagementMain = _import('systemManagement/layout/main') //系统管理main主页
+const Test = _import('systemManagement/test') //test1
+const Test2 = _import('systemManagement/test2') //test2
+const Test3= _import('systemManagement/test3') //test3
 export default [
     {
         // 智能航班监控
-        path: '/smartLine',
+        path: '/main',
         name: 'FMS06',
         meta: {
             icon: 'logo-buffer',
             title: '智能航班监控'
         },
-        component: SmartLineMain,
+        component: systemManagementMain,
         children: [
-            // {
-            //     path: '',
-            //     name: 'FMS06P001',
-            //     meta: {
-            //         icon: '',
-            //         codes: ['add'],
-            //         title: '智能航班监控',
-            //         tagsNavVisible: false
-            //     },
-            //     component: () => import('@/view/smartLine/index.vue')
-            // }
+            { path: '/Test', component: Test },
+            { path: '/Test2', component: Test2 },
+            { path: '/Test3', component: Test3 },
         ]
     },
     {
-        path: '', redirect: { path: '/smartLine' }
+        path: '', redirect: { path: '/main' }
     },
+   
+    
 
 ]

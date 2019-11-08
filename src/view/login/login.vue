@@ -1,6 +1,6 @@
 <template>
   <div class="login">
-        登陆
+        登陆3个
   </div>
 </template>
 <script>

@@ -49,8 +49,6 @@ router.onError(error => {
     iView.Message.error(`加载页面异常，${error.iView.Message}`)
     iView.LoadingBar.error()
 })
-
-
 Vue.config.productionTip = false
 
 // /* eslint-disable no-new */

@@ -1,5 +1,5 @@
 
-console.log('smartLine', 'smartLinerouter.js')
+console.log('systemManagementMain', 'systemManagementMain.js')
 import Vue from 'vue'
 import Router from 'vue-router'
 import routes from './routers'

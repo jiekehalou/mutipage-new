@@ -2,11 +2,11 @@ import Vue from 'vue'
 import VueI18n from 'vue-i18n'
 import { localRead } from '@/assets/js/utils/util'
 import customZhCn from './lang/zh-CN'
-import customZhTw from './lang/zh-TW'
-import customEnUs from './lang/en-US'
+// import customZhTw from './lang/zh-TW'
+// import customEnUs from './lang/en-US'
 import zhCnLocale from 'iview/src/locale/lang/zh-CN'
-import enUsLocale from 'iview/src/locale/lang/en-US'
-import zhTwLocale from 'iview/src/locale/lang/zh-TW'
+// import enUsLocale from 'iview/src/locale/lang/en-US'
+// import zhTwLocale from 'iview/src/locale/lang/zh-TW'
 
 Vue.use(VueI18n)
 

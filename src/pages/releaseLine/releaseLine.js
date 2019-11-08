@@ -16,7 +16,7 @@ import config from '@/config'
 // import installPlugin from '@/plugin'
 
 /* eslint-disable */
-import '@/icons' // icon
+import '@/assets/icons' 
 Vue.use(iView, {
   i18n: (key, value) => i18n.t(key, value)
 })
@@ -45,7 +45,6 @@ Vue.prototype.$config = config
 /**
  * 注册指令
  */
-importDirective(Vue)
 // Vue.directive('clickOutside', clickOutside)
 
 /* eslint-disable no-new */
