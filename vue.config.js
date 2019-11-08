@@ -13,16 +13,16 @@ const pages = {
   'login/login': {
     entry: './src/pages/login/login.js',
     template: 'public/template.html',
-    filename: 'login.html',
+    filename: `login/login.html`,
     title: '登陆',
   },
-  // // 2.系统管理
-  // 'systemManagement/systemManagement': {
-  //   entry: './src/pages/systemManagement/systemManagement.js',
-  //   template: 'public/template.html',
-  //   title: '系统管理',
-  //   filename: 'systemManagement.html',
-  // },
+  // 2.系统管理
+  'systemManagement/systemManagement': {
+    entry: './src/pages/systemManagement/systemManagement.js',
+    template: 'public/template.html',
+    title: '系统管理',
+    filename: `systemManagement/systemManagement.html`,
+  },
   // // //3.数字化放行
   // 'releaseLine/releaseLine': {
   //   entry: './src/pages/releaseLine/releaseLine.js',
@@ -132,6 +132,7 @@ module.exports = {
   },
   devServer: {
     open: true, // 启动服务后是否打开浏览器
+    index: '/login.html' ,   //  默认启动页面
     // host: '0.0.0.0',
     port: 8090, // 服务端口
     https: false,
